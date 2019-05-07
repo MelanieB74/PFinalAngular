@@ -1,0 +1,37 @@
+<div class="newReservation panel panel-default">
+  <div class="panel-heading">
+    <h4>Faire une réservation</h4>
+  </div>
+ 
+  <div class="panel-body">
+ 
+    <div class="input-group">
+        <span class="input-group-addon">Nom: </span>
+        <input class="form-control" [(ngModel)]="reservation_in_progress.client.nom" type="text" placeholder="ajouter Nom" name="nom" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Tel: </span>
+        <input class="form-control" [(ngModel)]="reservation_in_progress.client.tel" type="text" placeholder="ajouter Telephone" name="tel" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Mail: </span>
+        <input class="form-control" [(ngModel)]="reservation_in_progress.client.mail" type="text" placeholder="ajouter Mail" name="mail" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Date: </span>
+        <input class="form-control" [(ngModel)]="reservation_in_progress.date" type="text" placeholder="Date activite" name="date" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Heure: </span>
+        <input class="form-control" [(ngModel)]="reservation_in_progress.heure" type="text" placeholder="heure activite" name="heure" />
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Activite: </span>
+      <input class="form-control" [(ngModel)]="reservation_in_progress.activite.id" type="text" placeholder="activite" name="activite" />
+  </div>
+    
+    <div class="input-group">
+      <input type="button" value="Valider Reservation" (click)="addUpdateReservationClicked()"/>
+    </div>
+ 
+  </div>

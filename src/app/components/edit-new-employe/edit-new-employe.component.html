@@ -1,0 +1,43 @@
+<div class="newEmploye panel panel-default">
+  <div class="panel-heading">
+    <h4>Ajouter un Employe</h4>
+  </div>
+
+  <div class="panel-body">
+
+    <div class="input-group">
+        <span class="input-group-addon">Nom: </span>
+        <input class="form-control" [(ngModel)]="employe_in_progress.nom" type="text" placeholder="Employe Nom" name="nom" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Prenom: </span>
+        <input class="form-control" [(ngModel)]="employe_in_progress.prenom"  type="text" placeholder="Employe Prenom" name="prenom" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Tel: </span>
+        <input class="form-control" [(ngModel)]="employe_in_progress.tel" type="text" placeholder="Employe Telephone" name="tel" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Mail: </span>
+        <input class="form-control" [(ngModel)]="employe_in_progress.mail" type="text" placeholder="Employe Mail" name="mail" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Matricule: </span>
+        <input class="form-control" [(ngModel)]="employe_in_progress.matricule" type="text" placeholder="Employe Matricule" name="matricule" />
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Type: </span>
+      <input class="form-control" [(ngModel)]="employe_in_progress.type" type="text" placeholder="Employe type" name="type" />
+    </div>
+
+    <div class="form-group">
+      <label>Compte</label>
+        <input type="text" class="form-control" [(ngModel)]="employe_in_progress.userName" placeholder="Login"/>
+        <input type="text" class="form-control" [(ngModel)]="employe_in_progress.passWord" placeholder="PassWord"/>
+    </div> 
+    
+    <div class="input-group">
+      <input type="button" value="Ajouter Employe" (click)="addUpdateEmployeClicked()"/>
+    </div>
+
+  </div>

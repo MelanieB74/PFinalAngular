@@ -1,0 +1,9 @@
+<h3>Liste des Bowlings</h3>
+
+<div style="float: right; padding: 5px">
+  <input type="button" value="Ajouter une Activité" (click)="addNewActivitePressed()"/>
+</div>
+
+<app-bowling-summary *ngFor="let activite of activites" [activite]="activite" (userClick)="userClickedOnActivite($event)"></app-bowling-summary> 
+
+<div style="clear: both"></div>

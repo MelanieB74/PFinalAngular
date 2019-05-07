@@ -1,0 +1,27 @@
+<p> <a (click)="goBackButtonPressed()" style='cursor: pointer'>Retour</a> </p>
+<p> <a (click)="editButtonPressed()" style='cursor: pointer'>Modifier</a> </p>
+<p> <a (click)="deleteButtonPressed()" style='cursor: pointer'>Supprimer</a> </p>
+
+<div class='reservation panel panel-default'>
+  <div class="panel-heading">
+    <h4 class="panel-title"> Détail de la Réservation</h4>
+  </div>
+
+  <div class="panel-body" >
+    <div>
+      <div class="data-title"> <b>Vos Données Personnelles: </b> </div>
+        <p> Nom: <b>{{ reservation.client.nom }}</b> </p>
+        <p> Téléphone: <b>{{ reservation.client.tel }}</b> </p>
+        <p> Mail: <b>{{ reservation.client.mail }}</b> </p>
+        <p> Statut: <b>{{ reservation.client.statut }}</b> </p>
+      
+      <div class="data_title"> <b>Informations sur la Réservation:</b> </div>
+        <p>Réservation n°: {{ reservation.id }} </p>
+        <p>Date: <b>{{ reservation.date }}</b> </p>
+        <p>Heure: <b>{{ reservation.heure }}</b> </p>
+      
+      <div class="data_title"> <b>Informations sur l'Activité réservée:</b> </div>
+        <p >Id: <b>{{ reservation.activite.id }}</b> </p>
+    </div>
+  </div>
+</div>

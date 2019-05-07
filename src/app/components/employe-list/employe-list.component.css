@@ -1,0 +1,15 @@
+h1 {
+    font-size: 160%;
+}
+
+div.newEmploye {
+    max-width: 500px;
+}
+
+.darkbg {
+    background-color: cadetblue;
+}
+
+div.input-group {
+    margin: 10px 0;
+}

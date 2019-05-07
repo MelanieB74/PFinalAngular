@@ -1,0 +1,24 @@
+<p-accordion>
+  <p-accordionTab header="Salle 1" [selected]="true" (onOpen)="onTabOpen($event)">
+      <ul>
+      <li>Theme: <b>{{ activite?.theme }}</b> </li>
+      <li> Tarifs: </li>
+        <ul>
+          <li> Normal: <b>{{ activite?.tarifNormal }}</b> </li>
+          <li> Jeune: <b>{{ activite?.tarifJeune }}</b> </li>
+          <li> Etudiant: <b>{{ activite?.tarifEtudiant }}</b> </li> 
+        </ul>
+      <li> Nombres de personnes: </li>
+        <ul>
+          <li> Maximum: <b>{{ activite?.nbMax }}</b> </li>
+          <li> Minimul: <b>{{ activite?.nbMin }}</b> </li>
+        </ul>
+      </ul>
+  </p-accordionTab>
+  <p-accordionTab header="Salle 2">
+      Content 2
+  </p-accordionTab>
+  <p-accordionTab header="Salle 3">
+      Content 3    
+  </p-accordionTab>
+</p-accordion>

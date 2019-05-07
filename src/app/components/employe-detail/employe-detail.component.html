@@ -1,0 +1,40 @@
+<p> <a (click)="goBackButtonPressed()" style='cursor: pointer'>Retour</a> </p>
+<p> <a (click)="editButtonPressed()" style='cursor: pointer'>Modifier</a> </p> 
+<p> <a (click)="deleteButtonPressed()" style='cursor: pointer'>Supprimer</a> </p>
+
+<div class='employe panel panel-default'>
+  <div class="panel-heading">
+    <h4>Détails des Employes</h4>
+  </div>
+  <div class="panel-body" >
+    <ul>
+      <li>
+        Nom: <b>{{ employe.nom }}</b>
+      </li>
+      <li>
+        Prenom: <b>{{ employe.prenom }}</b>
+      </li>
+      <li>
+        Tel: <b>{{ employe.tel }}</b>
+      </li>
+      <li>
+        Mail: <b>{{ employe.mail }}</b>
+      </li>
+      <li>
+        Matricule: <b>{{ employe.matricule }}</b>
+      </li>
+      <li>
+        Type: <b>{{ employe.type }}</b>
+      </li>
+      <p>
+        Compte: 
+        <li>
+          Identifiant: <b>{{ employe.userName }}</b>
+        </li>
+        <li>
+          Mot de Passe: <b>{{ employe.passWord }}</b>
+        </li>
+      </p>
+    </ul>
+  </div>
+</div>

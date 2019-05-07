@@ -1,0 +1,9 @@
+<h3>Liste des Employés</h3>
+
+<div style="float: right; padding: 5px">
+  <input type="button" value="Ajouter un Employe" (click)="addNewEmployePressed()"/>
+</div>
+
+<app-employe-summary *ngFor="let employe of employes" [employe]="employe" (userClick)="userClickedOnEmploye($event)"></app-employe-summary> 
+
+<div style="clear: both"></div>

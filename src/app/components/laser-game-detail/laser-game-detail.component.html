@@ -1,0 +1,27 @@
+<p> <a (click)="goBackButtonPressed()" style='cursor: pointer'>Retour</a> </p>
+<p> <a (click)="editButtonPressed()" style='cursor: pointer'>Modifier</a> </p> 
+<p> <a (click)="deleteButtonPressed()" style='cursor: pointer'>Supprimer</a> </p>
+
+<div class='activite panel panel-default'>
+  <div class="panel-heading">
+    <h4>Détails de l'Activité sélectionnée</h4>
+  </div>
+  <div class="panel-body" >
+    <ul>
+      <p>
+        Thème: <b>{{ activite.theme }}</b>
+      </p>
+      <p>
+        Tarifs: 
+          <li> Normal: <b>{{ activite.tarifNormal }}</b> </li>
+          <li> Jeune: <b>{{ activite.tarifJeune }}</b> </li>
+          <li> Etudiant: <b>{{ activite.tarifEtudiant }}</b> </li>
+      </p>
+      <p>
+        Nombres de personnes:
+          <li> Maximum: <b>{{ activite.nbMax }}</b> </li>
+          <li> Minimul: <b>{{ activite.nbMin }}</b> </li>
+      </p>
+    </ul>
+  </div>
+</div>

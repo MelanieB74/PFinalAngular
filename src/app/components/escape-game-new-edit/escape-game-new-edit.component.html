@@ -1,0 +1,38 @@
+<div class="newActivite panel panel-default">
+  <div class="panel-heading">
+    <h4>Ajouter une Activité type Escape Game</h4>
+  </div>
+
+  <div class="panel-body">
+
+    <div class="input-group">
+        <span class="input-group-addon">Mission: </span>
+        <input class="form-control" [(ngModel)]="activite_in_progress.mission" type="text" placeholder="Nom de la Mission" name="mission" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Tarif Normal: </span>
+        <input class="form-control" [(ngModel)]="activite_in_progress.tarifNormal"  type="text" placeholder="Tarif Normal" name="tarifNormal" />
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Tarif Jeune: </span>
+      <input class="form-control" [(ngModel)]="activite_in_progress.tarifJeune"  type="text" placeholder="Tarif Jeune" name="tarifJeune" />
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Tarif Etudiant: </span>
+      <input class="form-control" [(ngModel)]="activite_in_progress.tarifEtudiant"  type="text" placeholder="Tarif Etudiant" name="tarifEtudiant" />
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Nombre Maximum: </span>
+        <input class="form-control" [(ngModel)]="activite_in_progress.nbMax" type="text" placeholder="Maximum de personne" name="nbMax" />
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Nombre Minimun: </span>
+      <input class="form-control" [(ngModel)]="activite_in_progress.nbMin" type="text" placeholder="Minimum de personne" name="nbMin" />
+    </div>
+   
+    <div class="input-group">
+      <input type="button" value="Ajouter l'activité" (click)="addUpdateActiviteClicked()"/>
+    </div>
+
+  </div>
+
